@@ -5,6 +5,46 @@ body {
     width: 100%;
     height: 100%;
     /* background-color: red; */
-   background: url(./assets/images/login_bg.jpg) no-repeat center;
-   background-size: cover;
+   background: url(../images/login_bg.jpg) no-repeat center;
+   background-size: cover; 
 } 
+.loginAndRegBox {
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.title_box {
+    height: 60px;
+    background: url(../images/login_title.png) no-repeat center;
+}
+.reg_box {
+    display: none;
+}
+.layui-form {
+    padding: 0 30px;
+}
+.link {
+    display: flex;
+    /* 靠最后对齐 */
+    justify-content: flex-end;
+}
+.link a {
+    font-size: 12px;
+}
+/* 通过定位将字体图标定位到input里面去 */
+.layui-form-item {
+    position: relative;
+}
+.layui-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.layui-input {
+    padding-left: 30px;
+}
+/* 通过定位将字体图标定位到input里面去结束 */
